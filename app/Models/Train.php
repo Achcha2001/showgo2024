@@ -9,7 +9,7 @@ class Train extends Model
 {
     protected $fillable = [
         'name', 'description', 'schedule', 'type', 'status'
-        // Add other fields as needed
+        
     ];
 
     public function trainDetails()

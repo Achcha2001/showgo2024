@@ -1,4 +1,4 @@
-@extends('layouts.homeui') {{-- Assuming you have a master layout --}}
+@extends('layouts.homeui') 
 
 @section('content')
     <div class="container">
@@ -18,7 +18,7 @@
                         <p>From: {{ $from }}</p>
                         <p>To: {{ $to }}</p> --}}
 
-                        <!-- Add any other details as needed -->
+                        
 
                         <a href="{{ route('home') }}" class="btn btn-primary">Back to Home</a>
                     </div>

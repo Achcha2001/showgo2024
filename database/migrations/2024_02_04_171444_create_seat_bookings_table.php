@@ -15,7 +15,7 @@ class CreateSeatBookingsTable extends Migration
             $table->string('train_name');
             $table->string('from');
             $table->string('to');
-            // Add more columns as needed
+           
 
             $table->timestamps();
         });

@@ -47,14 +47,14 @@ class TrainBoxesController extends Controller
 
     public function update(Request $request, $id)
     {
-        // Validate the form data
+        
         $request->validate([
             'train_id' => 'required|integer',
             'name' => 'required|string|max:255',
             'description' => 'required|string',
         ]);
 
-        // Find the train box by ID and update its data
+       
         $trainBox = TrainBox::find($id);
         $trainBox->update([
             'train_id' => $request->input('train_id'),

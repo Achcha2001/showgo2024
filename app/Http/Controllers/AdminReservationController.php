@@ -12,5 +12,5 @@ class AdminReservationController extends Controller
         return view('add-reservation-prices');
     }
 
-    // Add method to handle form submission if needed
+    
 }

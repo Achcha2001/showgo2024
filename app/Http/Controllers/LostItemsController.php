@@ -11,7 +11,7 @@ class LostItemsController extends Controller
 {
     public function index()
     {
-        // Retrieve all lost items
+       
         $lostItems = LostItem::all();
 
         return view('lost-item-form', ['lostItems' => $lostItems]);
@@ -19,7 +19,7 @@ class LostItemsController extends Controller
 
     public function submit(Request $request)
     {
-        // Validate the form data
+        
         $request->validate([
             'name' => 'required',
             'contact_number' => 'required',
@@ -28,7 +28,7 @@ class LostItemsController extends Controller
             'train' => 'required',
         ]);
 
-        // Create a new LostItem model instance and save the data
+        
         LostItem::create([
             'name' => $request->input('name'),
             'contact_number' => $request->input('contact_number'),
@@ -37,7 +37,7 @@ class LostItemsController extends Controller
             'train' => $request->input('train'),
         ]);
 
-        // Redirect back to the form page
+       
         return redirect()->route('lost-item-form')->with('success', 'Lost item submitted successfully!');
     }
 }

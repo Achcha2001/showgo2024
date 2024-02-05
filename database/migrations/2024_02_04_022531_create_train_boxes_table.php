@@ -15,7 +15,7 @@ class CreateTrainBoxesTable extends Migration
                 $table->unsignedBigInteger('train_id');
                 $table->string('name');
                 $table->text('description');
-                // Add more columns as needed
+               
 
                 $table->timestamps();
             });

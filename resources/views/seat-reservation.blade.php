@@ -220,7 +220,7 @@ border-radius: 10px;
                     <input type="date" class="form-control" id="date">
                 </div>
                 <div class="col-md-2">
-                    <label>&nbsp;</label> <!-- Placeholder for spacing -->
+                    <label>&nbsp;</label> 
                     <button class="btn btn-primary1 form-control" id="searchButton">Search</button>
                 </div>
             </div>
@@ -234,8 +234,7 @@ border-radius: 10px;
             var to = document.getElementById('to').value;
             var date = document.getElementById('date').value;
     
-            // Assuming Laravel route is named 'reservation.show'
-            // Adjust the route name based on your actual route
+            
             var url = "{{ route('reservation.form') }}?from=" + encodeURIComponent(from) + "&to=" + encodeURIComponent(to) + "&date=" + encodeURIComponent(date);
 
     

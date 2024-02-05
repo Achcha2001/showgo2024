@@ -1,4 +1,4 @@
-<!-- resources/views/found-item-form.blade.php -->
+
 
 @extends('layouts.homeui')
 
@@ -53,7 +53,7 @@
     <div class="welcome-box">
         <h1 class="wel">Report Found Items</h1>
 
-        <!-- Display Already Found Items -->
+       
         <h2>Already Found Items:</h2>
         <ul>
             @foreach($foundItems as $foundItem)

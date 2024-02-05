@@ -147,10 +147,10 @@
             Make your reservation
         </div>
     
-      <!-- Ticket Booking Form -->
+      
 <form id="ticketBookingForm" action="{{ route('proceed-to-payment') }}" method="POST">
     @csrf
-    <!-- Add form fields for ticket count, ID number, date, train name, from, and to -->
+    
     <div class="form-group">
         <label for="ticketCount">Ticket Count:</label>
         <input type="number" class="form-control" id="ticketCount" name="ticket_count" min="1" value="1">

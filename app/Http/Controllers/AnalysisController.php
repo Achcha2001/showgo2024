@@ -15,7 +15,7 @@ class AnalysisController extends Controller
 
     public function getMostBookedTrains()
     {
-        // Fetch data from seat_bookings table
+      
         $trainBookingData = SeatBooking::select('train_name')
             ->selectRaw('count(*) as booking_count')
             ->groupBy('train_name')

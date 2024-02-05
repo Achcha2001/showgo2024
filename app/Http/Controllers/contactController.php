@@ -15,14 +15,13 @@ class ContactController extends Controller
 
     public function submitForm(Request $request)
     {
-        // Validate the form data
+        
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
         ]);
 
-        // Create a new Contact model instance and save the data
         Contact::create([
             'name' => $request->input('name'),
             'email' => $request->input('email'),

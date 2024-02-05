@@ -69,7 +69,7 @@ Route::post('/contact', [ContactController::class, 'submitForm'])->name('contact
     Route::post('/add-ticket-prices', [DashboardController::class, 'addTicketPrices'])->name('add.ticket.prices');
     Route::get('/train-schedule', [DashboardController::class, 'showTrainSchedule'])->name('train.schedule');
     
-   // routes/logout
+   
 
 
 
@@ -83,7 +83,7 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/seat-reservation', [SeatReservationController::class, 'index'])->name('seat.reservation');
 
-// routes/web.php
+
 
 
 
@@ -105,14 +105,7 @@ Route::get('/ticket-prices', [TicketPriceController::class, 'showTicketPrices'])
 
 Route::get('/e-ticket', [EticketController::class, 'showEticketPage'])->name('e-ticket');
 
-////////////////////////
-// routes/web.php
 
-// routes/web.php
-
-
-
-// routes/web.php
 
 use App\Http\Controllers\AfterLoginController;
 
@@ -133,23 +126,20 @@ use App\Http\Controllers\TrainViewController;
 
 Route::get('/train-schedule', [TrainViewController::class, 'showTrainSchedule'])->name('train.schedule.view');
 
-// routes/web.php
+
 
 
 
 Route::get('/train-schedule', [DashboardController::class, 'showTrainSchedule'])->name('train.schedule');
 
-// routes/web.php
+
 
 use App\Http\Controllers\AdminMessagesController;
 
 
 
 
-// Contact Form Routes
 
-
-// Admin Messages Route
 Route::get('/admin/messages', [AdminMessagesController::class, 'show'])->name('admin.messages');
 
 
@@ -177,13 +167,13 @@ Route::get('/confirmation', [ConfirmationController::class, 'show'])->name('conf
 Route::get('/contact', [ContactController::class, 'showContactForm'])->name('contact.form');
 Route::post('/contact', [ContactController::class, 'submitContactForm'])->name('contact.submit');
 
-// routes/web.php
+
 
 
 
 Route::get('/contact', [ContactController::class, 'showForm'])->name('contact.form');
 
-// routes/web.php
+
 
 
 
@@ -199,15 +189,11 @@ Route::get('/train-schedule', [TrainViewController::class, 'showTrainSchedule'])
 
 
 
-// Add this at the top of the file
 
-
-// Reservation Routes
 Route::get('/reservation', [ReservationController::class, 'showForm'])->name('reservation.form');
 Route::post('/reservation', [ReservationController::class, 'reserveSeats'])->name('reserve.seats');
 
 
-// routes/web.php
 
 
 
@@ -224,7 +210,7 @@ use App\Http\Controllers\PassengerController;
 Route::get('/register', [PassengerController::class, 'showSignupForm'])->name('signup.form');
 Route::post('/register', [PassengerController::class, 'processSignup'])->name('signup.process');
 
-// routes/web.php
+
 
 use App\Http\Controllers\Auth\RegisterController;
 
@@ -232,7 +218,6 @@ Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->na
 Route::post('/register', [RegisterController::class, 'register']);
 
 
-// routes/web.php
 
 
 

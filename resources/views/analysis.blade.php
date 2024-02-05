@@ -16,7 +16,7 @@
     <div class="port">
         <h1>Analysis for most booked trains</h1>
         <div class="dashboard-buttons">
-            <!-- Your other analysis content here -->
+           
 
             <div style="width: 400px; height: 400px;">
                 <canvas id="trainBookingsChart"></canvas>
@@ -45,7 +45,7 @@
                                 'rgba(255, 99, 132, 0.7)',
                                 'rgba(54, 162, 235, 0.7)',
                                 'rgba(255, 206, 86, 0.7)',
-                                // Add more colors as needed
+                              
                             ],
                         }],
                     },

@@ -10,7 +10,7 @@ class FoundItemController extends Controller
 {
     public function index()
     {
-        // Retrieve all found items
+       
         $foundItems = FoundItem::all();
 
         return view('found-item-form', ['foundItems' => $foundItems]);
@@ -18,7 +18,7 @@ class FoundItemController extends Controller
 
     public function submit(Request $request)
     {
-        // Validate the form data
+        
         $request->validate([
             'name' => 'required',
             'found_object' => 'required',

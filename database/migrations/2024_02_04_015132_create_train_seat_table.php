@@ -14,7 +14,7 @@ class CreateTrainSeatTable extends Migration
             $table->id();
             $table->unsignedBigInteger('train_id');
             $table->foreign('train_id')->references('id')->on('trains')->onDelete('cascade');
-            // Add other fields as needed
+            
             $table->integer('seat_number');
             $table->boolean('is_reserved')->default(false);
             $table->timestamps();

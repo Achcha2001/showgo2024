@@ -1,4 +1,4 @@
-<!-- resources/views/lost_items/form.blade.php -->
+
 
 @extends('layouts.homeui')
 
@@ -53,7 +53,7 @@
     <div class="welcome-box">
         <h1 class="wel">Report Lost Items</h1>
 
-        <!-- Display Already Lost Items -->
+        
         <h2>Already Lost Items:</h2>
         <ul>
             @foreach($lostItems as $lostItem)
@@ -61,7 +61,7 @@
             @endforeach
         </ul>
 
-        <!-- Add Lost Item Button -->
+       
         <button onclick="showLostItemForm()">Add a Lost Item</button>
 
         <!-- Lost Item Form -->

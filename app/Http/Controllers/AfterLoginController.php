@@ -1,5 +1,5 @@
 <?php
-// app/Http/Controllers/AfterLoginController.php
+
 
 namespace App\Http\Controllers;
 

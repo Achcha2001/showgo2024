@@ -84,7 +84,7 @@ color: red;
 }
 </style>
 <style>
-    /* Add some spacing and styling to the table */
+    
     .table {
         width: 100%;
         margin-bottom: 1rem;
@@ -101,18 +101,18 @@ color: red;
         border-top: 1px solid #dee2e6;
     }
 
-    /* Style the table header */
+  
     .table thead th {
         vertical-align: bottom;
         border-bottom: 2px solid #dee2e6;
     }
 
-    /* Style alternating rows for better readability */
+    
     .table tbody tr:nth-of-type(odd) {
         background-color: #f8f9fa;
     }
 
-    /* Style the actions buttons in the last column */
+  
     .table tbody td:last-child {
         white-space: nowrap;
     }
@@ -121,7 +121,7 @@ color: red;
         margin-left: 5px;
     }
 
-    /* Style the edit button */
+    
     .btn-warning {
         color: #fff;
         background-color: #ffc107;
@@ -133,7 +133,7 @@ color: red;
         border-color: #d39e00;
     }
 
-    /* Style the delete button */
+    
     .btn-danger {
         color: #fff;
         background-color: #dc3545;
@@ -155,7 +155,7 @@ color: red;
             Add Main Reservation Packages
         </div>
 
-        <!-- Display success alert -->
+        
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
@@ -169,11 +169,10 @@ color: red;
                 <p>Train ID: {{ session('addedTrainBox')->train_id }}</p>
                 <p>Name: {{ session('addedTrainBox')->name }}</p>
                 <p>Description: {{ session('addedTrainBox')->description }}</p>
-                <!-- Add more details as needed -->
+                
             </div>
         @endif
 
-        <!-- Form for adding reservation packages -->
         <form class="fo" method="post" action="{{ route('train-boxes.store') }}">
             @csrf
             <div class="form-group1">

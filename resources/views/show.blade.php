@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Lanka Railway Map</title>
     <style>
-        /* Define styles for the route messages */
+        
         .route-message {
             margin-bottom: 10px;
         }

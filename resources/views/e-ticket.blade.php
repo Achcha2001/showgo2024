@@ -114,14 +114,14 @@
         var from = document.getElementById('from').value;
         var to = document.getElementById('to').value;
 
-        // Assume base price is $10 and increments by $10 for each different selection
+        
         var basePrice = 10;
         var priceIncrement = 10;
 
-        // Calculate the total amount
+       
         var totalAmount = basePrice + (getDistance(from, to) * priceIncrement) * ticketCount;
 
-        // Display the total amount
+        
         document.getElementById('totalAmount').value = 'Lkr ' + totalAmount.toFixed(2);
     }
 
@@ -142,11 +142,10 @@
         var totalAmount = parseFloat(document.getElementById('totalAmount').value);
         var ticketCount = parseInt(document.getElementById('ticketCount').value);
 
-        // Store data in session
+       
         sessionStorage.setItem('totalAmount', totalAmount);
         sessionStorage.setItem('ticketCount', ticketCount);
 
-        // Redirect to the confirmation page
         window.location.href = "{{ route('confirmation.show') }}";
     }
 </script>

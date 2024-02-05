@@ -255,14 +255,14 @@
             .welcome-button2 button{
                 width: 160px;
             }
-            /* Additional Styles for New Buttons */
+            
 .welcome-button3 button,
 .welcome-button4 button {
     padding: 10px 20px;
     width: 150px;
-    background-color: #0b163002; /* Adjust background color */
+    background-color: #0b163002; 
     border: outset;
-    color: #fff; /* Adjust text color */
+    color: #fff; 
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
@@ -337,7 +337,7 @@
 </div>
 <script>
     function reportLostItems() {
-        // Redirect to the lost items reporting page
+        
         window.location.href = '/lost-items/form';
     }
     </script>

@@ -12,7 +12,7 @@ class TrainBoxController extends Controller
     {
         $train = Train::find($trainId);
 
-        // Save train details to train_box table
+      
         TrainBox::create([
             'train_id' => $train->id,
             'name' => $train->name,

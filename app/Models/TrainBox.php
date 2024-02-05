@@ -1,7 +1,7 @@
 <?php
 
 
-// app/Models/TrainBox.php
+
 
 namespace App\Models;
 
@@ -16,7 +16,7 @@ class TrainBox extends Model
         'train_id',
         'name',
         'description',
-        // Add other fields as needed
+        
     ];
 
     // Define relationships if needed

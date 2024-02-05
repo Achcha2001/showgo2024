@@ -75,7 +75,7 @@ a:hover {
 <div class="container2">
     <h1>Edit Ticket Price</h1>
 
-    <!-- Edit Ticket Price Form -->
+    
     <form method="post" action="{{ route('update.ticket.price', ['id' => $ticketPrice->id]) }}">
         @csrf
         @method('PUT')
